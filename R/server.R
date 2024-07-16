@@ -52,22 +52,4 @@ server <- function(input, output, session) {
       selected_question(quiz())
     }
   })
-
-  observeEvent(input$i_submit_email, {
-    if (is_email(input$i_email)) {
-      emails <- readRDS("inst/extdata/emails.rds")
-      emails_updated <- append(emails, input$i_email)
-      saveRDS(emails_updated, "inst/extdata/emails.rds")
-      updateTextInput(inputId = "i_email", value = "")
-      showNotification(
-        "Email successfully submitted!",
-        type = "message", duration = 5
-      )
-    } else {
-      showNotification(
-        "Invalid email address. Please try again.",
-        type = "error", duration = 5
-      )
-    }
-  })
 }

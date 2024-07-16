@@ -37,15 +37,6 @@ ui <- function() {
           )
         )
       )
-    ),
-    tags$div(
-      style = "width: 600px; margin: 0 auto; text-align: center;",
-      h5("If you enjoyed playing, keep in touch by submitting your email:"),
-      tags$div(
-        style = "display: flex; justify-content: center; align-items: center; gap: 30px; align-items: baseline; padding-top: 20px;",
-        textInput("i_email", label = NULL, placeholder = "Enter email here..."),
-        actionButton("i_submit_email", "Submit")
-      )
     )
   )
 }
