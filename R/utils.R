@@ -229,6 +229,10 @@ check_and_update_pkgs_hex <- function(path = "inst/www/blurred") {
 #' used for the quiz. This function checks the number of authors for a given
 #' DESCRIPTION file and pads the the number of authors so that it always
 #' equals four.
+#'
+#' @param descs list of package description files
+#'
+#' @keywords internal
 pad_authors <- function(descs) {
   all_authors <- lapply(descs, function(x) c(x$authors, x$maintainer)) |>
     unlist() |>

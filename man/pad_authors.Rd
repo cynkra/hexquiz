@@ -6,9 +6,13 @@
 \usage{
 pad_authors(descs)
 }
+\arguments{
+\item{descs}{list of package description files}
+}
 \description{
 Some packages do not have four authors in the DESCRIPTION file that can be
 used for the quiz. This function checks the number of authors for a given
 DESCRIPTION file and pads the the number of authors so that it always
 equals four.
 }
+\keyword{internal}
