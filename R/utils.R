@@ -238,7 +238,7 @@ pad_authors <- function(descs) {
     unlist() |>
     unique()
 
-  purrr::map(descs, function(x) {
+  lapply(descs, function(x) {
     num_authors <- length(x$authors)
 
     if (num_authors < 4) {
