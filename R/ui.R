@@ -21,7 +21,7 @@ ui <- function() {
     ),
     tags$div(
       style = "width: 600px; margin: 0 auto; text-align: center;",
-      h3("Guess the package maintainer from the hex logo!"),
+      h3("Guess the package maintainer from the logo!"),
       p("Defined by the 'cre' role in the package DESCRIPTION file")
     ),
     tags$div(
